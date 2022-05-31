@@ -11,24 +11,22 @@ import NotFound from './components/Shared/NotFound'
 
 function App() {
   return (
-    <div className="max-w-full">
-      <div className=' flex justify-center items-center text-center'>
+    <div className="max-w-full relative">
+      <div className=' flex justify-center items-center text-center '>
         <Navbar />
       </div>
 
-      <div className=' flex justify-center items-center text-center'>
-        <div className='max-w-[1280px]  '>
-          <Routes>
-            <Route path='/' element={<Home />}></Route>
-            <Route path='home' element={<Home />}></Route>
-            <Route path='portfolio' element={<Portfolio />}></Route>
-            <Route path='ourteam' element={<OurTeam />}></Route>
-            <Route path='contactus' element={<ContactUs />}></Route>
-            <Route path='login' element={<Login />}></Route>
+      <div className='w-full'>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='home' element={<Home />}></Route>
+          <Route path='portfolio' element={<Portfolio />}></Route>
+          <Route path='ourteam' element={<OurTeam />}></Route>
+          <Route path='contactus' element={<ContactUs />}></Route>
+          <Route path='login' element={<Login />}></Route>
 
-            <Route path='*' element={<NotFound />}></Route>
-          </Routes>
-        </div>
+          <Route path='*' element={<NotFound />}></Route>
+        </Routes>
       </div>
 
       <div className=' flex justify-center items-center text-center'>
