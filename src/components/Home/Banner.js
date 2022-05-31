@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomButton from '../Shared/CustomButton';
 
 const Banner = () => {
     return (
@@ -9,7 +10,7 @@ const Banner = () => {
                     <div>
                         <h1 class="text-5xl font-bold">Let’s Grow Your Brand To The Next Level</h1>
                         <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="btn btn-primary">Hire us</button>
+                        <CustomButton>Hire us</CustomButton>
                     </div>
                 </div>
             </div>
