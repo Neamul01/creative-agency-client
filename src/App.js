@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home/Home';
+import Footer from './components/Shared/Footer';
+import Navbar from './components/Shared/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="max-w-full">
+      <div className=' flex justify-center items-center text-center'>
+        <Navbar />
+      </div>
+
+      <div className=' flex justify-center items-center text-center'>
+        <div className='max-w-[1280px]  '>
+          <Routes>
+            <Route path='/' element={<Home />}></Route>
+          </Routes>
+        </div>
+      </div>
+
+      <div className=' flex justify-center items-center text-center'>
+        <Footer />
+      </div>
     </div>
   );
 }
